@@ -29,7 +29,7 @@ export default function MobilePortfolio() {
                 <div class="col-12 col-md-6 col-xl-3 mb-3">
                     <motion.div initial={{opacity: 0, scale: 0.7}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.6}} viewport={{ once: true }}>
                         <div class="card border-0" >
-                            <img src="/img/mobile/nd-feat.png" alt="FilterPro Mobile App"></img>
+                            <img src="/img/mobile/nd-filter.gif" alt="FilterPro Mobile App"></img>
                             <div class="card-body">
                                 <p class="display-5 text-center">FilterPro</p>
                                 <div class="btn-group">
