@@ -69,8 +69,17 @@ export default function MobilePortfolio() {
                     </motion.div>
                 </div>
             </div>
+            
         </section>
-
+        <motion.div initial={{opacity: 0, scale: 0.8}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.4}} viewport={{ once: true }}>
+                <p class="h2 display-3 text-center mt-3">Most Recent Project</p>
+                <p class="text-center display-6 text-muted mb-5">SwiftUI • UserNotifications • CocoaPods • GoogleMobileAd • AVFoundation</p>
+            </motion.div>
+            <div class="mb-5">
+                <motion.div initial={{opacity: 0, scale: 0.7}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.6}} viewport={{ once: true }}>
+                    <img src="/img/mobile/ios-dev-showcase.png" width="100%"></img>
+                </motion.div>
+            </div>
         <section>
         <div class="modal fade" id="dadJokeModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -129,14 +138,15 @@ export default function MobilePortfolio() {
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="filterProModalLabel">Dev Progress :: 90% Complete</h5>
+                        <h5 class="modal-title" id="filterProModalLabel">Jun 23 2023: App Store Review In Progress</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div>
                         <h2 class="display-5 fw-bold lh-1 mb-2">FilterPro</h2>            
-                        <p class="lead">iOS app for photographers that calculates the correct shutter speed based on the original speed and any combination of ND Filters</p>
-                        <p class="lead">Coming Soon .. .. Github Repo on Request</p>
+                        <p class="lead">iOS app for photographers that calculates the correct exposure time from the base shutter speed and any combination of ND Filters</p>
+                        <p class="lead">Includes system notifications and a timer that runs in the background to ensure 100% accuracy.</p>
+                        <p class= "lead">Complete with On-Boarding, on first load, that explains the simplified UI/UX design.</p>
                         <hr class="featurette-divider"></hr>        
                         <div class="row row-cols-2 g-3">
                             <div class="col d-flex align-items-start"><svg class="bi bi-braces-asterisk" fill="currentColor" height="1.75em" viewBox="0 0 16 16" width="1.75em" xmlns="http://www.w3.org/2000/svg"> <path d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6ZM14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6ZM7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5h-1Z" fill-rule="evenodd"></path> </svg>
@@ -154,9 +164,19 @@ export default function MobilePortfolio() {
                             <h3 class="fw-bold mb-0 fs-4">&nbsp; Google Admob</h3>
                             </div>
                         </div>
+                        <div class="col d-flex align-items-start"><svg class="bi bi-bell-fill" fill="currentColor" height="1.75em" viewBox="0 0 16 16" width="1.75em" xmlns="http://www.w3.org/2000/svg"> <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/> </svg>
+                            <div>
+                                <h3 class="fw-bold mb-0 fs-4">&nbsp; Notifications</h3>
+                            </div>
+                        </div>
                         <div class="col d-flex align-items-start"><svg class="bi bi-droplet-half" fill="currentColor" height="1.75em" viewBox="0 0 16 16" width="1.75em" xmlns="http://www.w3.org/2000/svg"> <path d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z" fill-rule="evenodd"></path> <path d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z" fill-rule="evenodd"></path> </svg>
                             <div>
                                 <h3 class="fw-bold mb-0 fs-4">&nbsp; Animations</h3>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start"><svg xmlns="http://www.w3.org/2000/svg" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16"><path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/><path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/></svg>
+                            <div>
+                                <h3 class="fw-bold mb-0 fs-4">&nbsp; Cocoapods</h3>
                             </div>
                         </div>
                     </div>
