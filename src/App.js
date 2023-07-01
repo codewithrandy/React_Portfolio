@@ -9,12 +9,15 @@ import Footer from './components/Footer';
 import MobilePortfolio from './components/MobilePortfolio';
 import WebAppPortfolio from './components/WebAppPortfolio';
 import SitePortfolio from './components/SitePortfolio';
+import ShowcaseProject from './components/ShowcaseProject';
 
 function App() {
   return (
     <div className="App">
       <Header style={{ background: '#e3f2fd'}}/>
       <Hero />
+      <Divider />
+      <ShowcaseProject />
       <Divider />
       <MobilePortfolio />
       <Divider />
