@@ -129,7 +129,7 @@ export default function MobilePortfolio() {
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="filterProModalLabel">Jun 23 2023: App Store Review In Progress</h5>
+                        <h5 class="modal-title" id="filterProModalLabel">ND FilterPro Calculator</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
